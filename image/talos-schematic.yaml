@@ -1,0 +1,12 @@
+---
+overlay:
+  image: siderolabs/sbc-raspberrypi
+  name: rpi_generic
+  options:
+    configTxtAppend: |
+      dtparam=pciex1
+      dtparam=pciex1_gen=3
+customization:
+  systemExtensions:
+    officialExtensions:
+      - siderolabs/nut-client
