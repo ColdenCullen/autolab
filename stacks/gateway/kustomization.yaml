@@ -9,12 +9,15 @@ components:
   - ../../components/config-common
 
 resources:
+  - https://github.com/cert-manager/cert-manager/releases/download/v1.17.2/cert-manager.crds.yaml
   - namespace.yaml
   - helm.yaml
+  - cert-manager.yaml
   - route.yaml
 
 configMapGenerator:
   - name: helm-values
     files:
+      - values-cert-manager.yaml
       - values-traefik.yaml
       - values-traefik-crds.yaml
