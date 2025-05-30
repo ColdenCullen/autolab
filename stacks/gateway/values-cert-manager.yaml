@@ -1,0 +1,26 @@
+global:
+  leaderElection:
+    namespace: gateway
+
+image:
+  registry: quay.io
+  repository: jetstack/cert-manager-controller
+  tag: v1.17.2
+
+webhook:
+  image:
+    registry: quay.io
+    repository: jetstack/cert-manager-webhook
+    tag: v1.17.2
+
+acmesolver:
+  image:
+    registry: quay.io
+    repository: jetstack/cert-manager-acmesolver
+    tag: v1.17.2
+
+prometheus:
+  servicemonitor:
+    enabled: true
+  podmonitor:
+    enabled: false
