@@ -13,13 +13,13 @@ package holos
 			"-summary",
 		]
 	}
-	// kube_linter: {
-	// 	kind: "Command"
-	// 	// Note --path maps each resource to a top level field named by the kind.
-	// 	command: args: [
-	// 		"kube-linter",
-	// 		"lint",
-	// 		"--config", ".kube-linter.yaml",
-	// 	]
-	// }
+	kube_linter: {
+		kind: "Command"
+		// Note --path maps each resource to a top level field named by the kind.
+		command: args: [
+			"kube-linter",
+			"lint",
+			"--config", ".kube-linter.yaml",
+		]
+	}
 }
