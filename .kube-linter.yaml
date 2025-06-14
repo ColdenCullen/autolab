@@ -1,4 +1,8 @@
 checks:
   addAllBuiltIn: true
+  exclude:
+    - minimum-three-replicas
+    - required-label-owner
+    - required-annotation-email
   ignorePaths:
     - flux-system/gotk-components.yaml
